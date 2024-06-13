@@ -6,50 +6,98 @@
     <title>Restart.</title>
   </head>
   <body>
-    <h1>HTML elements</h1>
+    <nav data-testid="navbar">
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+            >HTML</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            target="_blank"
+            >CSS</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+            >JS</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <h1>HTML elements</h1>
+    </header>
     <hr />
     <!-- All about lists -->
-    <h2>Unordered list</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-    <h2>Ordered list</h2>
-    <ol>
-      <li>MongoDB</li>
-      <li>Node.js</li>
-      <li>React.js</li>
-    </ol>
+    <main>
+      <section data-testid="unordered-lists">
+        <h2>Unordered list</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Ordered list</h2>
+        <ol>
+          <li>MongoDB</li>
+          <li>Node.js</li>
+          <li>React.js</li>
+        </ol>
+      </section>
+      <hr />
+      <!-- Hyperlinks -->
+      <section data-testid="hyperlinks">
+        <h2>Links</h2>
+        <p>
+          <a
+            href="https://www.udemy.com/course/the-web-developer-bootcamp/"
+            target="_blank"
+            >Link to the course</a
+          >🧑🏽‍💻🧑🏽‍💻
+        </p>
+      </section>
+      <hr />
+      <!-- Images -->
+      <section data-testid="images">
+        <h2>Images</h2>
+        <figure>
+          <img
+            src="https://img-b.udemycdn.com/course/750x422/625204_436a_3.jpg"
+            alt="The Web Developer Bootcamp"
+          />
+          <figcaption>Learn web-development from scratch</figcaption>
+        </figure>
+      </section>
+      <hr />
+      <!-- Block vs Inline -->
+      <section data-testid="block-inline">
+        <h2>Block (div) vs Inline (span) elements</h2>
+        <div>
+          <p>I am a BLOCK element</p>
+        </div>
+        <span> I am INLINE element. </span>
+        <span> I am 2nd INLINE element. </span>
+      </section>
+      <hr />
+      <!-- Super and Sub script elements -->
+      <section data-testid="super-sub-script">
+        <h2>Super and Sub script</h2>
+        <p>Super<sup>script</sup></p>
+        <p>Sub<sub>script</sub></p>
+      </section>
+    </main>
     <hr />
-    <!-- Hyperlinks -->
-    <h2>Links</h2>
-    <p>
-      <a
-        href="https://www.udemy.com/course/the-web-developer-bootcamp/"
-        target="_blank"
-        >Link to the course</a
-      >🧑🏽‍💻🧑🏽‍💻
-    </p>
-    <hr />
-    <!-- Images -->
-    <h2>Images</h2>
-    <img
-      src="https://img-b.udemycdn.com/course/750x422/625204_436a_3.jpg"
-      alt="The Web Developer Bootcamp"
-    />
-    <hr />
-    <!-- Block vs Inline -->
-    <h2>Block (div) vs Inline (span) elements</h2>
-    <div>
-      <p>I am a BLOCK element</p>
-    </div>
-    <span> I am INLINE element. </span>
-    <span> I am 2nd INLINE element. </span>
-    <hr />
-    <!-- Super and Sub script elements -->
-    <h2>Super and Sub script</h2>
-    <p>Super<sup>script</sup></p>
-    <p>Sub<sub>script</sub></p>
+    <footer>
+      <p>This is me learning web-development (footer)</p>
+    </footer>
   </body>
 </html>
