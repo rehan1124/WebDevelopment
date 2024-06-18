@@ -179,6 +179,63 @@
         </form>
       </section>
       <hr />
+      <section data-testid="reddit-search">
+        <h2>Reddit search...</h2>
+        <form action="https://www.reddit.com/search" method="get">
+          <label for="query-box">Search</label>
+          <input id="query-box" name="q" type="text" />
+          <br />
+          <br />
+          <button type="submit">Click to search</button>
+        </form>
+      </section>
+      <hr />
+      <section data-testid="radio-buttons">
+        <h2>Checkboxes</h2>
+        <label for="check-box">HTML</label>
+        <input type="checkbox" id="check-box" />
+        <h2>Radio buttons</h2>
+        <form action="https://www.google.com/search" method="get">
+          <div>
+            <label for="s">Small:</label>
+            <input id="s" value="small-shirt" type="radio" name="q" />
+            <br />
+            <label for="s">Large:</label>
+            <input id="l" value="large-shirt" type="radio" name="q" />
+            <br />
+            <label for="s">X-large:</label>
+            <input id="xl" value="xl-shirt" type="radio" name="q" />
+          </div>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+        <h2>Dropdowns</h2>
+        <form action="https://www.google.com/search" method="get">
+          <div>
+            <label for="tshirt-size">Select your t-shirt size:</label>
+            <select name="q" id="tshirt-size">
+              <option value="">
+                --- Please select desired t-shirt size ---
+              </option>
+              <option value="small-tshirt">Small</option>
+              <option value="medium-tshirt">Medium</option>
+              <option value="large-tshirt">Large</option>
+            </select>
+          </div>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <hr />
+      <section data-testid="ranges">
+        <h2>Ranges</h2>
+        <form action="https://www.google.co.in/">
+          <label for="range">Study hours per day:</label>
+          <input id="range" name="q" type="range" min="0" max="5" />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <hr />
     </main>
     <footer>
       <p>This is me learning web-development (footer)</p>
