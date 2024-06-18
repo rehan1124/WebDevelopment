@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validations</title>
+  </head>
+  <body>
+    <main>
+      <section data-testid="form-validations">
+        <h2>Race registration!</h2>
+        <form action="https://www.dummy.com" method="get">
+          <div>
+            <label for="firstname">First name</label>
+            <input id="firstname" name="firstname" type="text" required />
+          </div>
+          <br />
+          <div>
+            <label for="lastname">Last name</label>
+            <input
+              id="lastname"
+              name="lastname"
+              type="text"
+              minlength="6"
+              maxlength="20"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="">Select a race</label>
+            <br />
+            <input
+              type="radio"
+              name="race"
+              id="mini-run"
+              value="5k-run"
+            /><label for="mini-run">Fun run 5k</label>
+            <input
+              type="radio"
+              name="race"
+              id="full-marathon"
+              value="fullmarathon"
+            /><label for="full-marathon">Full marathon</label>
+            <input
+              type="radio"
+              name="race"
+              id="half-marathon"
+              value="halfmarathon"
+            /><label for="half-marathon">Half marathon</label>
+          </div>
+          <br />
+          <div>
+            <label for="email">Email</label
+            ><input type="email" name="email" id="email" required />
+          </div>
+          <br />
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <br />
+          <div>
+            <label for="age">Select age group</label>
+            <select name="age" id="age" required>
+              <option value="less-than-18">Under 18</option>
+              <option value="18-to-21">18 to 21</option>
+              <option value="21-to-25">21 to 25</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
