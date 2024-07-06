@@ -1,244 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restart.</title>
+    <title>Photo Blog</title>
+    <link rel="stylesheet" href="photos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <nav data-testid="navbar">
-      <ul>
-        <li>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-            target="_blank"
-            >HTML</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-            target="_blank"
-            >CSS</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-            target="_blank"
-            >JS</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <header>
-      <h1>HTML elements</h1>
-    </header>
-    <hr />
-    <!-- All about lists -->
-    <main>
-      <section data-testid="unordered-lists">
-        <h2>Unordered list</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
+    <!-- PUT YOUR NAME HERE! -->
+    <nav id="navbar">Syed/Rehan</nav>
+    <main id="main">
+      <!-- Massimo Margagnoni -->
+      <section id="massimo">
+        <img
+          src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg"
+        /><img
+          src="http://c2.staticflickr.com/8/7218/7209301894_c99d3a33c2_h.jpg"
+        /><img
+          src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg"
+        />
       </section>
-      <section>
-        <h2>Ordered list</h2>
-        <ol>
-          <li>MongoDB</li>
-          <li>Node.js</li>
-          <li>React.js</li>
-        </ol>
+
+      <!-- Giuseppe Milo -->
+      <section id="giuseppe">
+        <img
+          src="http://c1.staticflickr.com/9/8788/17367410309_78abb9e5b6_b.jpg"
+        /><img
+          src="http://c2.staticflickr.com/6/5814/20700286354_762c19bd3b_b.jpg"
+        /><img
+          src="http://c2.staticflickr.com/6/5647/21137202535_404bf25729_b.jpg"
+        />
       </section>
-      <hr />
-      <!-- Hyperlinks -->
-      <section data-testid="hyperlinks">
-        <h2>Links</h2>
-        <p>
-          <a
-            href="https://www.udemy.com/course/the-web-developer-bootcamp/"
-            target="_blank"
-            >Link to the course</a
-          >🧑🏽‍💻🧑🏽‍💻
-        </p>
+
+      <!-- GörlitzPhotography -->
+      <section id="gorlitz">
+        <img
+          src="http://c2.staticflickr.com/6/5588/14991687545_5c8e1a2e86_b.jpg"
+        /><img
+          src="http://c2.staticflickr.com/4/3888/14878097108_5997041006_b.jpg"
+        /><img
+          src="http://c2.staticflickr.com/8/7579/15482110477_0b0e9e5421_b.jpg"
+        />
       </section>
-      <hr />
-      <!-- Images -->
-      <section data-testid="images">
-        <h2>Images</h2>
-        <figure>
-          <img
-            src="https://img-b.udemycdn.com/course/750x422/625204_436a_3.jpg"
-            alt="The Web Developer Bootcamp"
-          />
-          <figcaption>Learn web-development from scratch</figcaption>
-        </figure>
-      </section>
-      <hr />
-      <!-- Block vs Inline -->
-      <section data-testid="block-inline">
-        <h2>Block (div) vs Inline (span) elements</h2>
-        <div>
-          <p>I am a BLOCK element</p>
-        </div>
-        <span> I am INLINE element. </span>
-        <span> I am 2nd INLINE element. </span>
-      </section>
-      <hr />
-      <!-- Super and Sub script elements -->
-      <section data-testid="super-sub-script">
-        <h2>Super and Sub script</h2>
-        <p>Super<sup>script</sup></p>
-        <p>Sub<sub>script</sub></p>
-      </section>
-      <hr />
-      <!-- Tables -->
-      <section data-testid="tables">
-        <h2>Tables</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>S. No.</th>
-              <th>Tech</th>
-              <th>Required</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>HTML</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>CSS</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>JS</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>React</td>
-              <td>Yes</td>
-            </tr>
-          </tbody>
-          <tfoot></tfoot>
-        </table>
-      </section>
-      <hr />
-      <section data-testid="forms">
-        <h2>Forms</h2>
-        <form action="/webdev" method="post">
-          <div>
-            <label for="username">Username:</label>
-            <input
-              id="username"
-              name="username"
-              type="text"
-              placeholder="Enter username"
-            />
-          </div>
-          <br />
-          <div>
-            <label for="password">Password:</label>
-            <input
-              id="password"
-              name="password"
-              type="password"
-              placeholder="Your password"
-            />
-          </div>
-          <br />
-          <div>
-            <label for="color">Choose your color:</label>
-            <input id="color" name="color" type="color" placeholder="Color" />
-          </div>
-          <br />
-          <div>
-            <label for="age">Enter you age:</label>
-            <input id="age" name="age" type="number" placeholder="Age" />
-          </div>
-          <br />
-          <div>
-            <label for="time">Time:</label>
-            <input id="time" name="time" type="time" placeholder="Time" />
-          </div>
-          <br />
-          <div>
-            <label for="date">Select date and time:</label>
-            <input id="date" name="date" type="date" placeholder="Date" />
-          </div>
-          <br />
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-      <hr />
-      <section data-testid="reddit-search">
-        <h2>Reddit search...</h2>
-        <form action="https://www.reddit.com/search" method="get">
-          <label for="query-box">Search</label>
-          <input id="query-box" name="q" type="text" />
-          <br />
-          <br />
-          <button type="submit">Click to search</button>
-        </form>
-      </section>
-      <hr />
-      <section data-testid="radio-buttons">
-        <h2>Checkboxes</h2>
-        <label for="check-box">HTML</label>
-        <input type="checkbox" id="check-box" />
-        <h2>Radio buttons</h2>
-        <form action="https://www.google.com/search" method="get">
-          <div>
-            <label for="s">Small:</label>
-            <input id="s" value="small-shirt" type="radio" name="q" />
-            <br />
-            <label for="s">Large:</label>
-            <input id="l" value="large-shirt" type="radio" name="q" />
-            <br />
-            <label for="s">X-large:</label>
-            <input id="xl" value="xl-shirt" type="radio" name="q" />
-          </div>
-          <br />
-          <button type="submit">Submit</button>
-        </form>
-        <h2>Dropdowns</h2>
-        <form action="https://www.google.com/search" method="get">
-          <div>
-            <label for="tshirt-size">Select your t-shirt size:</label>
-            <select name="q" id="tshirt-size">
-              <option value="">
-                --- Please select desired t-shirt size ---
-              </option>
-              <option value="small-tshirt">Small</option>
-              <option value="medium-tshirt">Medium</option>
-              <option value="large-tshirt">Large</option>
-            </select>
-          </div>
-          <br />
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-      <hr />
-      <section data-testid="ranges">
-        <h2>Ranges</h2>
-        <form action="https://www.google.co.in/">
-          <label for="range">Study hours per day:</label>
-          <input id="range" name="q" type="range" min="0" max="5" />
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-      <hr />
+
+      <!-- All Photos Licensed Under Creative Commons 2.0 -->
+      <!-- https://creativecommons.org/licenses/by/2.0/legalcode  -->
     </main>
-    <footer>
-      <p>This is me learning web-development (footer)</p>
-    </footer>
   </body>
 </html>
